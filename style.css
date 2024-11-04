@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.resume {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+.left-column {
+    background-color: #333;
+    color: #fff;
+    width: 35%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-column {
+    width: 65%;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #fff;
+}
+
+.profile h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f9f9f9;
+}
+
+.profile h1 span {
+    color: #ddd;
+}
+
+.profile h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #aaa;
+}
+
+.section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffb74d;
+    margin-bottom: 10px;
+}
+
+.education-item {
+    margin-bottom: 15px;
+}
+
+.education-item p {
+    font-size: 14px;
+    color: #eee;
+    line-height: 1.5;
+}
+
+.section ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.section ul li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+.section ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ffb74d;
+    font-size: 20px;
+}
+
+.section p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #eee;
+}
+
+.right-column .section {
+    margin-bottom: 20px;
+}
+
+.right-column .section h3 {
+    color: #333;
+    border-bottom: 2px solid #ffb74d;
+    padding-bottom: 5px;
+}
+
+.right-column .section p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.right-column .job h4 {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.right-column .job span {
+    font-weight: normal;
+    color: #888;
+}
+
+.right-column .job em {
+    float: right;
+    color: #aaa;
+    font-style: normal;
+}
+
+.right-column .job p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    margin-top: 5px;
+}
+
+.achievements p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .profile img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile h1 {
+        font-size: 22px;
+    }
+
+    .profile h2 {
+        font-size: 14px;
+    }
+
+    .section h3 {
+        font-size: 16px;
+    }
+
+    .right-column .job h4 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume {
+        box-shadow: none;
+    }
+
+    .left-column,
+    .right-column {
+        padding: 15px;
+    }
+
+    .profile img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .profile h1 {
+        font-size: 20px;
+    }
+
+    .profile h2 {
+        font-size: 13px;
+    }
+
+    .section h3 {
+        font-size: 15px;
+    }
+
+    .right-column .job h4 {
+        font-size: 14px;
+    }
+
+    .section p,
+    .section ul li,
+    .right-column .section p {
+        font-size: 13px;
+    }
+}
